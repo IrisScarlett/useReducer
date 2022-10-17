@@ -23,7 +23,10 @@
 
 import React from 'react';
 import {createRoot} from 'react-dom/client';
-import { TodoApp } from './components/08-useReducer/TodoApp';
+import { BrowserRouter } from 'react-router-dom';
+
+// import { TodoApp } from './components/08-useReducer/TodoApp';
+import { MainApp } from './components/09-useContext/MainApp';
 // import { CallbackHook } from './components/06-memos/CallbackHook';
 // import { Padre } from './components/07-tarea-memo/Padre';
 // import { MemoHook } from './components/06-memos/MemoHook';
@@ -44,7 +47,9 @@ const container = document.getElementById('root');
 const root =  createRoot(container);
 
 root.render(
-  
-    <TodoApp />
+    <BrowserRouter>
+    <MainApp />
+    </BrowserRouter>
+    
 );
 
